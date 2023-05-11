@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Définition de l'objet Person -->
+    <bean id="person" class="com.example.demo.entity.Person">
+        <property name="firstName" value="John" />
+        <property name="lastName" value="Doe" />
+    </bean>
+    
+<!--     <bean id="monComposant" class="com.example.demo.composants.MonComposant"> -->
+<!--         <constructor-arg ref="ServiceA" /> -->
+<!--         <property name="service1" ref="ServiceA"></property> -->
+<!--     </bean> -->
+<!--     <bean id="ServiceA" class="com.example.demo.Service.ServiceA"></bean> -->
+    <bean id="ServiceB" class="com.example.demo.Service.ServiceB"></bean>
+    
+    
+
+</beans>
